@@ -6,6 +6,7 @@
 <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
 <title> Qili Wang </title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="my.js" async="async"></script>
 </head>
 
 <body>
@@ -17,16 +18,16 @@
             <div id = "BAR_NAVI" style="width:70%;height:100%;float:left;line-height:46px">
                 <ul style="width:80%;height:100%;text-align:left;float:right;margin:0;padding:0;">
                     <li style="width:20%;list-style:none;float:left">
-                        <a role = "button" class="naviManuFont">Home</a>
+                        <a role = "button" class="naviManuFont" onclick="scrollToAnchor('INTRODUCTION_PART')">Home</a>
                     </li>
                     <li style="width:20%;list-style:none;float:left">
-                        <a role = "button" class="naviManuFont">Experience</a>
+                        <a role = "button" class="naviManuFont" onclick="scrollToAnchor('EXPERIENCE_PART')">Experience</a>
                     </li>
                     <li style="width:20%;list-style:none;float:left">
-                        <a role = "button" class="naviManuFont">Research</a>
+                        <a role = "button" class="naviManuFont" onclick="scrollToAnchor('RESEARCH_INTERE_PART')">Research</a>
                     </li>
                     <li style="width:20%;list-style:none;float:left">
-                        <a role = "button" class="naviManuFont">Publication</a>
+                        <a role = "button" class="naviManuFont" onclick="scrollToAnchor('RESEARCH_PUB_PART')">Publication</a>
                     </li>
                     <li style="width:20%;list-style:none;float:left">
                         <a role = "button" class="naviManuFont">CV</a>
@@ -39,25 +40,25 @@
         <div class="myphoto" ><img src="me.jpg" style="height:100%;width:100%"/></div>
         <div style="height:100%;width:55%;margin-left:5%;float:left">
                 <div style="height:25%;width:100%;text-align:center;margin-top:30px">
-                    <h style="font-size:40px;color: #076FB5;">Qili Wang</h>
+                    <h style="font-size:37px;color: #076FB5;">Qili Wang</h>
                 </div>
                 <div style="height:18%;width:100%;text-align:center">
-                    <h style="height:100%;font-size:24px;color:#000000">Ph.D. candidate in Information Systems</h>
+                    <h style="height:100%;font-size:23px;color:#000000">Ph.D. Candidate in Information Systems</h>
                 </div>
                 <div style="height:10%;width:100%;text-align:center">
-                    <h style="height:100%;font-size:22px;color:#000000;margin-top:10px">Department of Economic Information Management</h>
+                    <h style="height:100%;font-size:21px;color:#000000;margin-top:10px">Department of Economic Information Management</h>
                 </div>
                 <div style="height:18%;width:100%;text-align:center">
-                    <h style="height:100%;font-size:22px;color:#000000;margin-top:5px">School of Information, Renmin University of China</h>
+                    <h style="height:100%;font-size:21px;color:#000000;margin-top:5px">School of Information, Renmin University of China</h>
                 </div>
                 <div style="height:10%;width:100%;text-align:center">
-                        <h style="height:100%;font-size:22px;color:#000000;margin-top:5px">Email: wql@ruc.edu.cn</h>
+                        <h style="height:100%;font-size:21px;color:#000000;margin-top:5px">Email: wql@ruc.edu.cn</h>
                 </div>
         </div>   
     </div>
     <div id = "EXPERIENCE_PART" class = "experienceSection">
-        <div style="height:25%;width:100%">
-            <h style="font-size:27px;color: #076FB5">EXPERIENCE</h>
+        <div style="height:50px;width:100%">
+            <h style="font-size:25px;color: #076FB5">EXPERIENCE</h>
         </div>
         <div style="height:80%;width:90%;text-align:left;margin-left:5%;padding:0;">
             <div style="height:20%;width:100%">
@@ -83,12 +84,36 @@
         </div>
     </div>
     <div id = "RESEARCH_INTERE_PART" class = "intereSection">
-        <div style="height:20%;width:100%">
-            <h style="font-size:27px;color: #076FB5">RESEARCH INTEREST</h>
+        <div style="height:50px;width:100%">
+            <h style="font-size:25px;color: #076FB5">RESEARCH INTEREST</h>
         </div>
         <div style="height:80%;width:100%;text-align:left;padding:0">
-            <a style="font-size:22px;float:left"><strong style="font-size:24px">Topics: </strong>Design Science, Business Intelligence, Fraud Detection, Online Communities</a>
-            <a style="display:block;font-size:22px;float:left;margin-top:22px"><strong style="font-size:24px">Methodologies: </strong>Machine Learning, Data Mining, Deep Learning, Econometrics</a>
+            <a style="font-size:20px;float:left"><strong style="font-size:22px">Topics: </strong>Design Science, Business Intelligence, Fraud Detection, Online Communities</a>
+            <a style="display:block;font-size:20px;float:left;margin-top:22px"><strong style="font-size:22px">Methodologies: </strong>Machine Learning, Data Mining, Deep Learning, Econometrics</a>
+        </div>
+    </div>
+    <div id = "RESEARCH_PUB_PART" class = "pubSection">
+        <div style="height:50px;width:100%">
+            <h style="font-size:25px;color: #076FB5">PUBLICATION</h>
+        </div>
+        <div style="width:100%;text-align:left;padding:0">
+            <a style="font-size:20px;float:left"><u>JOURNAL PUBLICATIONS</u></a>           
+            <a class = "pubDetail">Xinwei Zhang, Yaoci Han, Wei Xu and <strong>Qili Wang</strong>, "HOBA: A Novel Feature Engineering Methodology for Credit Card Fraud Detection with Deep Learning Architecture", <I><strong>Information Sciences</strong></I> (2019), forthcoming.</a>
+            <a class = "pubDetail"><strong>Qili Wang</strong>, Wei Xu, Xinting Huang and Kunlin Yang, "Enhancing Intraday Stock Price Manipulation Detection by Leveraging Recurrent Neural Networks with Ensemble Learning", <I><strong>Neurocomputing</strong></I> (2019), available online.</a>
+            <a class = "pubDetail"><strong>Qili Wang</strong>, Wei Xu and Han Zheng, "Combining the Wisdom of Crowds and Technical Analysis for Financial Market Prediction Using Deep Random Subspace Ensembles", <I><strong>Neurocomputing</strong></I> (2018), 299, 51-61.</a>
+            <a class = "pubDetail">Wei Xu, <strong>Qili Wang</strong> and Runyu Chen, "Spatio-temporal Prediction of Crop Disease Severity for Agricultural Emergency Management Based on Recurrent Neural Networks", <I><strong>Geoinformatica</strong></I> (2018), 22, 363-381.</a>
+        </div>
+        <div style="width:100%;text-align:left;padding:0">
+            <a style="display:block;font-size:20px;float:left;margin-top:25px"><u>WORKING PAPERS</u></a>           
+            <a class = "pubDetail">"Mining User Requirements to Facilitate Mobile App Quality Upgrades with Big Data", Under Review (with Runyu Chen and Wei Xu).</a>
+            <a class = "pubDetail">"Spatial-Temporal Analytics for Air Quality Prediction: A Deep Multitask Learning Framework", Under Review (with Xiaotong Sun, Wei Xu and Hongxun Jiang).</a>
+            <a class = "pubDetail">"First-party Fraud Detection in Digital Lending: A Theory-driven Data Mining Approach", Ready for Submission.</a>
+            <a class = "pubDetail">"Incorporating Multi-Aspect Characteristics into Smuggling Activity Detection", Work-in-Progress, (with Xiaotong Sun and Wei Xu).</a>
+            <a class = "pubDetail">"Improving Money Laundering Detection by Uncovering Suspicious Groups in Transaction Networks: A Network Analysis Method", Work-in-Progress, (with Xiaotong Sun and Wei Xu).</a>
+        </div>
+        <div style="width:100%;text-align:left;padding:0;margin-bottom:50px">
+            <a style="display:block;font-size:20px;float:left;margin-top:25px"><u>CONFERENCE PAPERS</u></a>           
+            <a class = "pubDetail">Runyu Chen, Wei Xu and <strong>Qili Wang</strong>, "What Can Blockchain Contributes to Fintech? Insights from Cryptocurrency Projects", Symposium on Blockchain Technology and Application (SBTA), Hong Kong, China, January 2019.</a>
         </div>
     </div>
 </body>
