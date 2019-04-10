@@ -1,23 +1,18 @@
-function scrollToAnchor (anchorName) {
-    var anchorName;
-    anchorElement = document.getElementById(anchorName);
-    //如果对应的id锚点存在就跳转
-    if (anchorElement) {
-        anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'});
-        var scrolledY = window.scrollY;
-        if(scrolledY){
-            window.scroll(0, scrolledY - 70);
-        }
+$(document).ready(function (){
+    document.getElementById("BUT_INTRODUCTION_PART").onclick = function () {
+        var X = $('#INTRODUCTION_PART').offset().top;
+        window.scrollTo(0, X - 70); 
     }
-}
-function scrollToTarget(anchorName){
-    var element = document.getElementById(anchorName);
-    var headerOffset = 20;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition - headerOffset;
-
-    window.scrollTo({
-         top: offsetPosition,
-         behavior: "smooth"
-    });
-}
+    document.getElementById("BUT_EXPERIENCE_PART").onclick = function () {
+        var X = $('#EXPERIENCE_PART').offset().top;
+        window.scrollTo(0, X - 70); 
+    }
+    document.getElementById("BUT_RESEARCH_INTERE_PART").onclick = function () {
+        var X = $('#RESEARCH_INTERE_PART').offset().top;
+        window.scrollTo(0, X - 70); 
+    }
+    document.getElementById("BUT_RESEARCH_PUB_PART").onclick = function () {
+        var X = $('#RESEARCH_PUB_PART').offset().top;
+        window.scrollTo(0, X - 70); 
+    }
+})
