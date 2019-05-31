@@ -78,14 +78,15 @@ font.ratio {
 
 .introSection {
 	width: 70%;
-	height: 350px;
+	height: 340px;
 	margin-left: 15%;
 	margin-top: 80px
 }
 
 .myphoto {
-	width: 35%;
+	width: 30%;
 	height: 100%;
+	margin-left:5%;
 	float: left
 }
 
