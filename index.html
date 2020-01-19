@@ -11,11 +11,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138234294-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-138234294-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-138234294-1');
+    function myalert(){alert("The CV has not yet been update.")}
 </script>
 </head>
 
@@ -40,7 +40,7 @@
                         <a role = "button" class="naviManuFont" id = "BUT_RESEARCH_PUB_PART">Publication</a>
                     </li>
                     <li style="width:20%;list-style:none;float:left">
-                        <a role = "button" class="naviManuFont">CV</a>
+                        <a role = "button" class="naviManuFont" onclick="myalert()">CV</a>
                     </li>
                 </ul>
             </div>
