@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-body,td,th {
+body,td,th,h {
 	height: 100%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
 	font-size: large;
 	font-weight: 300;
 	margin: 0;
@@ -23,11 +23,11 @@ p {
 h1 {
 	line-height: 40px;
 	font-size: 30px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
 }
 h2 {
 	color: #000000 ;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
 	font-size: 20px;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -64,14 +64,14 @@ font.ratio {
 .naviFont {
     height:100%;
     font-size:24px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
     color: #5E5E5E
 }
 
 .naviManuFont {
     height:100%;
     font-size:19px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
     color: #5E5E5E;
     cursor:pointer
 }
@@ -117,4 +117,8 @@ font.ratio {
 	line-height:30px;
 	float:left;
 	margin-top:20px
+}
+
+.handWriting {
+	font-family: 'Kalam', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
