@@ -48,10 +48,10 @@ font.ratio {
 	width:inherit;
 	left: 0;
 	right: 0;
-    height: 52px;
+    height: 3vw;
     background:rgba(255,255,255,0.9);
     box-shadow: 0px 1px 5px 0px #5E5E5E;
-	margin-bottom: 5px;
+	margin-bottom: 0.3vw;
 	position: fixed;
 	top: 0
 }
@@ -63,14 +63,14 @@ font.ratio {
 
 .naviFont {
     height:100%;
-    font-size:24px;
+    font-size:2vw;
     font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
     color: #5E5E5E
 }
 
 .naviManuFont {
     height:100%;
-    font-size:19px;
+    font-size:1.5vw;
     font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
     color: #5E5E5E;
     cursor:pointer
@@ -78,45 +78,49 @@ font.ratio {
 
 .introSection {
 	width: 70%;
-	height: 340px;
+	/* height: 340px; */
 	margin-left: 15%;
-	margin-top: 80px
+	margin-top: 4.8vw
+}
+
+.clear {
+	clear:both;
 }
 
 .myphoto {
 	width: 33%;
-	height: 100%;
+	height: auto;
 	margin-left:5%;
 	float: left
 }
 
 .experienceSection {
 	width: 70%;
-	height: 210px;
+	height: auto;
 	margin-left: 15%;
-	margin-top: 50px
+	margin-top: 3vw
 }
 
 .intereSection {
 	width: 70%;
-	height: 140px;
+	height: auto;
 	margin-left: 15%;
-	margin-top: 50px
+	margin-top: 3vw
 }
 
 .pubSection {
 	width: 77%;
-	height: 1000px;
+	height: auto;
 	margin-left: 15%;
-	margin-top: 50px
+	margin-top: 3vw
 }
 
 .pubDetail {
 	display:block;
-	font-size:20px;
-	line-height:30px;
+	font-size:1.4vw;
+	line-height:1.8vw;
 	float:left;
-	margin-top:20px
+	margin-top:1.3vw;
 }
 
 .handWriting {

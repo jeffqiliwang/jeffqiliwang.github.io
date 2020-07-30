@@ -15,4 +15,18 @@ $(document).ready(function (){
         var X = $('#RESEARCH_PUB_PART').offset().top;
         window.scrollTo(0, X - 70); 
     }
+    /*
+    console.log("Hello...", document.getElementsByClassName("myphoto")[0].offsetHeight)
+    document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+    document.getElementById('photo').onload=function(){
+        // 加载完成
+        console.log("Hello", document.getElementById("photo").offsetHeight)
+        document.getElementById("aff").style.height = document.getElementById("photo").offsetHeight + "px";
+    };
+    */
+    document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+    window.onresize = changeSize
+    function changeSize () {
+        document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+    }
 })
