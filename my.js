@@ -1,9 +1,9 @@
 document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
-    window.onresize = changeSize
-    function changeSize () {
-        document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
-    }
-
+console.log("Hello...", document.getElementsByClassName("myphoto")[0].offsetHeight)
+window.onresize = changeSize
+function changeSize () {
+    document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+}
 $(document).ready(function (){
     document.getElementById("BUT_INTRODUCTION_PART").onclick = function () {
         var X = $('#INTRODUCTION_PART').offset().top;
