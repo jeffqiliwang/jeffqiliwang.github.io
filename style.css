@@ -88,7 +88,7 @@ font.ratio {
 }
 
 .myphoto {
-	width: 33%;
+	width: 20vw;
 	height: auto;
 	margin-left:5%;
 	float: left
@@ -98,21 +98,21 @@ font.ratio {
 	width: 70%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 3vw
+	margin-top: 2vw
 }
 
 .intereSection {
 	width: 70%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 3vw
+	margin-top: 2vw
 }
 
 .pubSection {
 	width: 77%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 3vw
+	margin-top: 2vw
 }
 
 .pubDetail {
