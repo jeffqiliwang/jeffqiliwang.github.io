@@ -1,3 +1,9 @@
+document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+    window.onresize = changeSize
+    function changeSize () {
+        document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
+    }
+
 $(document).ready(function (){
     document.getElementById("BUT_INTRODUCTION_PART").onclick = function () {
         var X = $('#INTRODUCTION_PART').offset().top;
@@ -24,9 +30,4 @@ $(document).ready(function (){
         document.getElementById("aff").style.height = document.getElementById("photo").offsetHeight + "px";
     };
     */
-    document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
-    window.onresize = changeSize
-    function changeSize () {
-        document.getElementById("aff").style.height = document.getElementsByClassName("myphoto")[0].offsetHeight + "px";
-    }
 })
