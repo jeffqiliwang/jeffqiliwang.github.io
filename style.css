@@ -120,7 +120,16 @@ font.ratio {
 	font-size:1.4vw;
 	line-height:2vw;
 	float:left;
-	margin-top:1.4vw;
+	margin-top:1.8vw;
+}
+
+.remarkDetail {
+	font-size:1.4vw;
+	line-height:2vw;
+	float:left;
+	margin-top:0.4vw;
+	list-style:square;
+	padding-left:3vw;
 }
 
 .handWriting {
