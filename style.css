@@ -115,7 +115,22 @@ font.ratio {
 	margin-top: 2vw
 }
 
+.profservSection {
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	margin-top: 2vw
+}
+
 .pubDetail {
+	display:block;
+	font-size:1.4vw;
+	line-height:2vw;
+	float:left;
+	margin-top:1.8vw;
+}
+
+.serviceDetail {
 	display:block;
 	font-size:1.4vw;
 	line-height:2vw;
