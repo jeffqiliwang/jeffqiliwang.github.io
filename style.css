@@ -88,9 +88,10 @@ font.ratio {
 }
 
 .myphoto {
-	width: 20vw;
+	width: 15vw;
 	height: auto;
-	margin-left:5%;
+	margin-left:7%;
+	margin-top:1.5vw;
 	float: left
 }
 
@@ -124,7 +125,17 @@ font.ratio {
 
 .pubDetail {
 	display:block;
-	font-size:1.4vw;
+	font-size:1.3vw;
+	line-height:2vw;
+	float:left;
+	margin-top:1.8vw;
+	text-indent: -1.3vw;
+	margin-left: 1.3vw;
+}
+
+.confDetail {
+	display:block;
+	font-size:1.3vw;
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
@@ -132,14 +143,14 @@ font.ratio {
 
 .serviceDetail {
 	display:block;
-	font-size:1.4vw;
+	font-size:1.3vw;
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
 }
 
 .remarkDetail {
-	font-size:1.4vw;
+	font-size:1.3vw;
 	line-height:2vw;
 	float:left;
 	margin-top:0.4vw;
