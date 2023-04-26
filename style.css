@@ -106,21 +106,21 @@ font.ratio {
 	width: 70%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 2vw
+	margin-top: 3vw
 }
 
 .pubSection {
 	width: 77%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 2vw
+	margin-top: 4vw
 }
 
 .profservSection {
 	width: 70%;
 	height: auto;
 	margin-left: 15%;
-	margin-top: 2vw
+	margin-top: 4vw
 }
 
 .pubDetail {
@@ -129,8 +129,7 @@ font.ratio {
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
-	text-indent: -1.3vw;
-	margin-left: 1.3vw;
+	margin-left: 2vw;
 }
 
 .confDetail {
@@ -139,6 +138,7 @@ font.ratio {
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
+	margin-left: 2vw;
 }
 
 .serviceDetail {
@@ -155,7 +155,7 @@ font.ratio {
 	float:left;
 	margin-top:0.4vw;
 	list-style:square;
-	padding-left:3vw;
+	padding-left:5vw;
 }
 
 .handWriting {
