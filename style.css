@@ -1,10 +1,29 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Lora';
+    src: url('./Lora-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* Range of weights supported */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('./Lora-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* Range of weights supported */
+    font-style: italic;
+}
+
+strong {
+    font-weight: 600; /* Adjust to a slightly lighter bold effect */
+	color: #000000;
+}
+
 body,td,th,h {
 	height: 100%;
-	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-family: 'Lora', Times, Georgia, Cochin, 'Times New Roman', serif;
 	font-size: large;
-	font-weight: 300;
+	font-weight: 100;
 	margin: 0;
 	margin-bottom: 60px
 }
@@ -12,9 +31,11 @@ body,td,th,h {
 a {
 	color: #000000;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 100;
 }
 p {
+	font-family: 'Lora', Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-weight: 100;
 	color: #000000;
 	margin:0px;
 	cursor: text
@@ -125,7 +146,8 @@ font.ratio {
 
 .pubDetail {
 	display:block;
-	font-size:1.3vw;
+	color: #161616;
+	font-size:1.28vw;
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
@@ -134,7 +156,8 @@ font.ratio {
 
 .confDetail {
 	display:block;
-	font-size:1.3vw;
+	color: #161616;
+	font-size:1.28vw;
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
@@ -143,14 +166,14 @@ font.ratio {
 
 .serviceDetail {
 	display:block;
-	font-size:1.3vw;
+	font-size:1.28vw;
 	line-height:2vw;
 	float:left;
 	margin-top:1.8vw;
 }
 
 .remarkDetail {
-	font-size:1.3vw;
+	font-size:1.2vw;
 	line-height:2vw;
 	float:left;
 	margin-top:0.4vw;
@@ -159,5 +182,5 @@ font.ratio {
 }
 
 .handWriting {
-	font-family: 'Kalam', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
