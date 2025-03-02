@@ -21,7 +21,7 @@ strong {
 
 body,td,th,h {
 	height: 100%;
-	font-family: 'Lora', Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-family: 'Lora', Times, Georgia, 'Calisto MT', 'Book Antiqua', Cochin, 'Times New Roman', serif;
 	font-size: large;
 	font-weight: 100;
 	margin: 0;
@@ -34,7 +34,7 @@ a {
 	font-weight: 100;
 }
 p {
-	font-family: 'Lora', Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-family: 'Lora', Palatino, Times, Georgia,'Calisto MT', 'Book Antiqua', Cochin, 'Times New Roman', serif;
 	font-weight: 100;
 	color: #000000;
 	margin:0px;
@@ -44,11 +44,11 @@ p {
 h1 {
 	line-height: 40px;
 	font-size: 30px;
-	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-family:  Georgia, Palatino, Times, 'Calisto MT', 'Book Antiqua', Cochin, 'Times New Roman', serif;
 }
 h2 {
 	color: #000000 ;
-	font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+	font-family: Georgia, Palatino, Times, 'Calisto MT', 'Book Antiqua', Cochin, 'Times New Roman', serif;
 	font-size: 20px;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
@@ -85,14 +85,14 @@ font.ratio {
 .naviFont {
     height:100%;
     font-size:2vw;
-    font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+    font-family:  Palatino, Times, 'Calisto MT', 'Book Antiqua', Georgia, Cochin, 'Times New Roman', serif;
     color: #5E5E5E
 }
 
 .naviManuFont {
     height:100%;
     font-size:1.5vw;
-    font-family: Palatino, Times, Georgia, Cochin, 'Times New Roman', serif;
+    font-family: Palatino, Times, Georgia, 'Calisto MT', 'Book Antiqua', Cochin, 'Times New Roman', serif;
     color: #5E5E5E;
     cursor:pointer
 }
