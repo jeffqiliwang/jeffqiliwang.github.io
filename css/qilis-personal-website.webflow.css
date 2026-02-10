@@ -101,7 +101,7 @@ h1 {
   background-color: #fafafa00;
   border-radius: 10px;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 18px;
   font-style: normal;
@@ -363,6 +363,12 @@ h1 {
   list-style-type: decimal;
 }
 
+.paragraph-dm {
+  text-align: center;
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 1440px) {
   .nav-menu {
     float: right;
@@ -472,6 +478,10 @@ h1 {
   .list-item-numbered {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .paragraph-dm {
+    font-size: 18px;
   }
 }
 
@@ -712,6 +722,10 @@ h1 {
   .list-teaching {
     padding-left: 20px;
   }
+
+  .paragraph-dm {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -813,6 +827,10 @@ h1 {
 
   .list-teaching {
     padding-left: 10px;
+  }
+
+  .paragraph-dm {
+    font-size: 12px;
   }
 }
 
