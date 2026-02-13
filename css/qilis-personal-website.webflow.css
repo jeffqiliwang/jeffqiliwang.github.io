@@ -19,7 +19,9 @@ h1 {
 .heading-name {
   color: #333;
   text-align: center;
+  margin-top: 10px;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-size: 32px;
 }
 
 .nav-link {
@@ -380,6 +382,12 @@ h1 {
   background-color: #fafafa;
 }
 
+.heading {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
 @media screen and (min-width: 1440px) {
   .nav-link {
     box-shadow: 1px -1px 1px #e5e5e533;
@@ -513,6 +521,12 @@ h1 {
   .paragraph-dm {
     font-size: 18px;
   }
+
+  .heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -550,7 +564,7 @@ h1 {
   }
 
   .menu-button {
-    margin-top: 10px;
+    margin-top: 7px;
     position: absolute;
     inset: 0% 5% auto auto;
   }
@@ -665,7 +679,9 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .heading-name {
-    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 26px;
     line-height: 38px;
   }
 
@@ -691,7 +707,7 @@ h1 {
 
   .menu-button {
     mix-blend-mode: normal;
-    margin-top: 8px;
+    margin-top: 2px;
   }
 
   .menu-button.w--open {
@@ -799,7 +815,7 @@ h1 {
 
 @media screen and (max-width: 479px) {
   .heading-name {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .nav-link, .nav-link.w--current {
@@ -808,7 +824,7 @@ h1 {
   }
 
   .menu-button {
-    margin-top: 10px;
+    margin-top: 2px;
   }
 
   .container {
@@ -848,6 +864,7 @@ h1 {
 
   .homesection {
     text-align: left;
+    margin-top: 80px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -905,6 +922,10 @@ h1 {
 
   .paragraph-dm {
     font-size: 12px;
+  }
+
+  .section-7 {
+    font-size: 24px;
   }
 }
 
