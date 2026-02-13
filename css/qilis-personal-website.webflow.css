@@ -26,15 +26,13 @@ h1 {
   color: #333;
   text-align: center;
   vertical-align: baseline;
-  background-color: #e5e5e5;
+  background-color: #f2f0e1;
   border: 0 solid #fafafa;
   border-bottom-style: none;
-  border-radius: 0 10px 0 0;
-  width: 120px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-radius: 10px 10px 0 0;
+  width: 110px;
+  margin: auto 5px;
+  padding: 10px 0;
   font-family: Droid Serif, serif;
   font-size: 16px;
   font-weight: 700;
@@ -42,33 +40,40 @@ h1 {
 }
 
 .nav-link.w--current {
-  color: #fff;
+  color: #1c1d06;
   text-transform: none;
-  background-color: #ffffff5e;
-  background-image: linear-gradient(#00000080, #00000080);
+  background-color: #fafafa;
+  border: 2px solid #f2f0e2;
+  border-bottom-style: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 110px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 12px 0 10px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  text-decoration: none;
-  box-shadow: 1px -1px 0 1px #0003;
+  text-decoration: underline;
+  box-shadow: 1px -1px 1px 1px #e5e5e533;
 }
 
 .nav-menu {
   float: none;
   aspect-ratio: auto;
-  margin-top: 12px;
+  margin-top: auto;
+  margin-bottom: 0;
   margin-right: 0;
   position: absolute;
-  inset: 0% 5% auto auto;
+  inset: auto 5% -2px auto;
 }
 
 .navbar {
   background-color: #aeafaf00;
-  background-image: linear-gradient(270deg, #8a8888, #fff);
+  background-image: linear-gradient(#fefcf3, #fefcf3);
   border: 1px #000;
+  border-bottom: 2px solid #f2f0e2;
   margin-left: 0;
   position: relative;
 }
@@ -154,7 +159,9 @@ h1 {
 }
 
 .image.image-reveal {
+  border-color: #aeafaf80;
   max-height: 240px;
+  box-shadow: 0 2px 5px 3px #0003;
 }
 
 .columns-linewithtext {
@@ -343,7 +350,7 @@ h1 {
 }
 
 .code-embed-previewcv {
-  margin-top: 72px;
+  margin-top: 80px;
 }
 
 .italic-text {
@@ -369,12 +376,31 @@ h1 {
   font-size: 16px;
 }
 
+.body-2, .body-3, .body-4, .body-5 {
+  background-color: #fafafa;
+}
+
 @media screen and (min-width: 1440px) {
+  .nav-link {
+    box-shadow: 1px -1px 1px #e5e5e533;
+  }
+
+  .nav-link.w--current {
+    padding-top: 12px;
+    box-shadow: 1px -1px #e6e4bfcc;
+  }
+
   .nav-menu {
     float: right;
-    margin-top: 12px;
-    margin-bottom: 10px;
-    position: static;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -2px;
+    right: 18%;
+  }
+
+  .navbar {
+    border: 2px solid #f2f0e1;
   }
 
   .container {
@@ -475,6 +501,10 @@ h1 {
     font-size: 18px;
   }
 
+  .code-embed-previewcv {
+    margin-top: 85px;
+  }
+
   .list-item-numbered {
     font-size: 18px;
     line-height: 28px;
@@ -487,7 +517,28 @@ h1 {
 
 @media screen and (max-width: 991px) {
   .nav-link {
-    background-color: #ffffffe6;
+    box-shadow: none;
+    background-color: #f2f0e1;
+    border-top: 2px #f9f9f9;
+    border-left: 2px #fafafa;
+    border-right: 2px #f8f8f8;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+
+  .nav-link.w--current {
+    box-shadow: none;
+    background-color: #f9f9f9;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 5px;
+    padding-top: 10px;
   }
 
   .nav-menu {
@@ -498,7 +549,14 @@ h1 {
     right: 10px;
   }
 
-  .menu-button, .menu-button.w--open {
+  .menu-button {
+    margin-top: 10px;
+    position: absolute;
+    inset: 0% 5% auto auto;
+  }
+
+  .menu-button.w--open {
+    background-color: #f2f0e1;
     margin-top: 10px;
     position: absolute;
     inset: 0% 5% auto auto;
@@ -609,6 +667,17 @@ h1 {
   .heading-name {
     font-size: 28px;
     line-height: 38px;
+  }
+
+  .nav-link {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .nav-link.w--current {
+    box-shadow: none;
+    width: 100px;
+    font-size: 14px;
   }
 
   .nav-menu {
@@ -731,6 +800,11 @@ h1 {
 @media screen and (max-width: 479px) {
   .heading-name {
     font-size: 28px;
+  }
+
+  .nav-link, .nav-link.w--current {
+    width: 90px;
+    font-size: 12px;
   }
 
   .menu-button {
