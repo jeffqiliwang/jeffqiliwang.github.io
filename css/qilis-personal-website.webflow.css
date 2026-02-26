@@ -1,3 +1,10 @@
+body {
+  color: #333;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -8,12 +15,21 @@ h1 {
 
 .body {
   clear: none;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   object-fit: fill;
   background-color: #fafafa;
   border-bottom: 2px solid #000;
   border-radius: 1px;
+  flex-flow: column;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 .heading-name {
@@ -30,7 +46,7 @@ h1 {
   vertical-align: baseline;
   background-color: #f2f0e1;
   border: 0 solid #fafafa;
-  border-bottom-style: none;
+  border-bottom: 0 #b7bdc5;
   border-radius: 10px 10px 0 0;
   width: 110px;
   margin: auto 5px;
@@ -45,8 +61,8 @@ h1 {
   color: #1c1d06;
   text-transform: none;
   background-color: #fafafa;
-  border: 2px solid #f2f0e2;
-  border-bottom-style: none;
+  border: 2px solid #f2f0e1;
+  border-bottom: 2px #dcd7d7;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -72,10 +88,9 @@ h1 {
 }
 
 .navbar {
-  background-color: #aeafaf00;
-  background-image: linear-gradient(#fefcf3, #fefcf3);
+  background-color: #fefcf3;
   border: 1px #000;
-  border-bottom: 2px solid #f2f0e2;
+  border-bottom: 2px solid #f2f0e1;
   margin-left: 0;
   position: relative;
 }
@@ -233,6 +248,7 @@ h1 {
   color: #00000080;
   text-align: center;
   margin: 10px 40px;
+  padding-bottom: 0;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 14px;
 }
@@ -252,8 +268,17 @@ h1 {
 }
 
 .section-3 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: 0;
   margin-left: 80px;
   margin-right: 80px;
+  display: block;
+  position: static;
+  inset: auto 0% 0%;
 }
 
 .column-divlinel, .column-divliner {
@@ -378,10 +403,6 @@ h1 {
   font-size: 16px;
 }
 
-.body-2, .body-3, .body-4, .body-5 {
-  background-color: #fafafa;
-}
-
 .heading {
   margin-top: 15px;
   margin-bottom: 8px;
@@ -409,6 +430,7 @@ h1 {
 
   .navbar {
     border: 2px solid #f2f0e1;
+    border-bottom-color: #b7bdc5;
   }
 
   .container {
