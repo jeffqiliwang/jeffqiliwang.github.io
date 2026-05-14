@@ -762,14 +762,14 @@ h1 {
   }
 
   .nav-link.w--current {
-    box-shadow: none;
     width: 100px;
+    box-shadow: none;
     font-size: 14px;
   }
 
   .nav-menu {
-    direction: rtl;
     text-align: left;
+    direction: rtl;
     background-color: #fff0;
     margin-top: 60px;
     margin-left: 0;
