@@ -110,8 +110,60 @@ input.w-button {
   text-align: inherit;
   text-decoration: inherit;
 }
+:where(button.w-modal-trigger) {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+}
 .w-popover {
   position-anchor: none;
+}
+:where(
+  .w-popover[data-w-popover-backdrop-animated],
+  .w-modal[data-w-popover-backdrop-animated]
+)::backdrop {
+  animation: var(--w-backdrop-animation, none);
+}
+:where(.w-popover, .w-modal) {
+  --w-backdrop-animation: initial;
+}
+.w-popover-mask {
+  position: fixed !important;
+  inset: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  transform: none !important;
+  clip-path: none !important;
+  pointer-events: auto !important;
+}
+.w-popover-mask[popover] {
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+}
+.w-popover-mask::backdrop {
+  display: none !important;
+}
+.w-popover-mask:not(:popover-open) {
+  display: none !important;
+}
+@supports not selector(:popover-open) {
+  .w-popover-mask {
+    display: none !important;
+  }
 }
 .w-popover[popover]:not(:popover-open) {
   display: none;
@@ -121,6 +173,9 @@ input.w-button {
 }
 .w-modal[popover]:not(:popover-open) {
   display: none;
+}
+:where(.w-modal[data-w-modal-lock-scroll]) {
+  overscroll-behavior: contain;
 }
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
